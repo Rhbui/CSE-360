@@ -19,7 +19,7 @@ public class AddingMachine
 	   */
 	
 	  private int total;
-	  private String history;
+	 
 	  
 	  	  /**
 	  	   * function to call main and initialize the variables
@@ -29,7 +29,7 @@ public class AddingMachine
 		  public AddingMachine () 
 		  {
 		    total = 0;  // not needed - included for clarity
-		    history = "0";
+		    
 		  }
 		  
 		  /**
@@ -40,7 +40,7 @@ public class AddingMachine
 		  
 		  public int getTotal () 
 		  {
-		    return total;
+		    return 0;
 		  }
 		  
 		  /**
@@ -50,10 +50,8 @@ public class AddingMachine
 		   * @history represents the string that keeps the memory of the operations performed
 		   */
 		  
-		  public void add (int value) 
-		  {
-			  total += value;
-			  history += " + " + value;
+		  public void add (int value) {
+
 		  }
 		  
 		  /**
@@ -63,10 +61,8 @@ public class AddingMachine
 		   * @history represents the string that keeps the memory of the operations performed
 		   */
 		  
-		  public void subtract (int value) 
-		  {
-			  total -= value;
-			  history += " - " + value;
+		  public void subtract (int value) {
+	
 		  }
 		  
 		  /**
@@ -77,7 +73,7 @@ public class AddingMachine
 		  
 		  public String toString () 
 		  {
-		    return history;
+		    return "";
 		  }
 		  /**
 		   * clears the memory
@@ -86,9 +82,6 @@ public class AddingMachine
 		   * @history initializes the value back to "0" to "clear" the memory
 		   */
 		  
-		  public void clear() 
-		  {
-			  total = 0;
-			  history = "0";
+		  public void clear() {
 		  }
 }
